@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body , html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+.hero, .testimonials, .about, .experience, .edu, .skills {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.light-effect {
+    position: fixed;
+    width: 25rem;
+    height: 25rem;
+    background: conic-gradient(from 338deg at 248% 82%, #175221, #338b33, rgb(53 177 63 / 20%));
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    filter: blur(50px);
+    z-index: 9999;
+    opacity: 0.7;
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.nav-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+.hero {
+    margin-left: 10rem;
+    margin-top: 100px;
+}
+
+.hero p {
+    width: 60rem;
+}
+
+.hero-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.testimonials {
+    margin-left: 10rem;
+    margin-top: 50px;
+}
+
+.testimonials h2 {
+    font-size: 35px;
+}
+
+.testimonials h3 {
+    font-size: 20px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 40rem;
+}
+
+.icons {
+    display: flex;
+    margin-top: 3rem;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icons img {
+    color: #ffff;
+    opacity: 0.5;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-section {
+    margin-top: 10rem;
+    gap: 7rem;
+}
+
+/* Image Section */
+.person-img {
+    display: flex;
+}
+
+.person-img img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 2px solid #ffff;
+}
+
+/* Text Section */
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    margin-left: 20rem;
+}
+
+.liP {
+    font-weight: 100;
+}
+
+.name {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.name span {
+    color: #175221;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    width: 38rem;
+    margin-top: 3rem;
+}
+
+.btns {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    background: transparent;
+    color: #ffff;
+    align-items: center;
+    padding: 7px 10px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.btns img {
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin-left: 28rem;
+}
+
+.experience h1 {
+    font-size: 35px;
+    display: flex;
+}
+
+.role {
+    color: #175221;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.com-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-div li {
+    margin-top: 10px;
+    line-height: 2;
+    list-style-type: circle;
+}
+
+.edu {
+    margin-left: 36rem;
+}
+
+.edu h1 {
+    font-size: 35px;
+}
+
+.clg-name {
+    font-size: 28px;
+}
+
+.degree {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.skills h1 {
+    font-size: 35px;
+}
+
+.skills {
+    width: 45rem;
+    line-height: 2;
+}
+
+.skill-name {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 8px 0px;
+}
+
+.skill-des {
+    font-weight: 100;
+}
+
+/* ✅ Responsive Design (Mobile & Tablet Adjustments) */
+@media (max-width: 1024px) {
+    .hero {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 40px;
+    }
+    .btns {
+      width: 22rem;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  button {
+      display: flex;
+      background: transparent;
+      color: #ffff;
+      align-items: center;
+      padding: 3px 7px;
+      border: 1px solid;
+      border-radius: 16px;
+  }
+  
+  .btns img {
+      border: none;
+      width: 10px;
+      height: 10px;
+      margin-right: 3px;
+  }
+  
+    .name {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .experience,
+    .edu {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 10px;
+        padding: 5px 10px;
+    }
+
+    .nav-icon {
+        font-size: 18px;
+    }
+
+    .hero {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 35px;
+    }
+
+    .person-img img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .btns {
+      width: 22rem;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  button {
+    display: flex;
+    background: transparent;
+    color: #ffff;
+    align-items: center;
+    padding: 3px 7px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.btns img {
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+}
+  
+    .name {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 14px;
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .experience,
+    .edu,
+    .skills {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+  
+    .navbar {
+        flex-direction: row;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 25px;
+    }
+
+    .hero p {
+      font-size: 15px;
+        width: 65%;
+        margin: auto;
+    }
+
+    .testimonials {
+        text-align: center;
+        margin-left: 0;
+    }
+    .testimonials h2 {
+      font-size: 28px;
+  }
+  .testimonials h3 {
+    font-size: 17px;
+}
+.cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+}
+    .testimonial-card {
+        max-width: 90%;
+    }
+
+    .about-section {
+      margin-top: 7rem;
+        width: 90%;
+    }
+    .person-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    margin-left: 20rem;
+}
+
+.liP {
+  font-size: 12px;
+  width: 23rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+    .name {
+        font-size: 35px;
+    }
+      .text {
+        font-size: 12px;
+        max-width: 54%;
+        margin: 10px 0px;
+    }
+
+    .btns {
+              display: flex;
+              flex-direction: row;
+              width: 45%;
+              justify-content: space-between;
+              gap: 10px;
+              margin-bottom: 10px;
+    }
+    button {
+      display: flex;
+      background: transparent;
+      color: #ffff;
+      align-items: center;
+      padding: 3px 7px;
+      border: 1px solid;
+      border-radius: 16px;
+  }
+  
+  .btns img {
+      border: none;
+      width: 10px;
+      height: 10px;
+      margin-right: 3px;
+  }
+    .btns button {
+        width: 100%;
+    }
+
+    .experience h1,
+    .edu h1,
+    .skills h1 {
+      font-size: 20px;
+      margin-left: 12px;
+    }
+    .com-name {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      margin: 0 15px
+  }
+  .role {
+    color: #175221;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.exp-div li {
+  margin-top: 10px;
+  line-height: 2;
+  list-style-type: circle;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.clg-name {
+  font-size: 12px;
+  margin-left: 15px;
+}
+.degree {
+  font-size: 10px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.skill-name {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 0px;
+}
+.skill-des {
+  font-weight: 100;
+  font-size: 12px;
+}
+    .icons {
+      display: flex;
+      margin-top: 1rem;
+      gap: 5px;
+      justify-content: center;
+  }
+  
+  .icons img {
+      width: 25px;
+      color: #ffff;
+      opacity: 0.5;
+  }
+}
