@@ -24,8 +24,8 @@ const About = () => {
               FaceBook
             </button>
             <button>
-             <a href="https://www.facebook.com/afnan.fahim.1428" target="_blank" rel="noopener noreferrer" className="social-icon">
-                           <img src={facebook} alt="Facebook" />
+             <a href="https://github.com/Afnan-Fahim" target="_blank" rel="noopener noreferrer" className="social-icon">
+                           <img src={github} alt="Facebook" />
                          </a>
               GitHub
             </button>
