@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.85da2e7d.css",
-    "main.js": "/static/js/main.434c8faf.js",
+    "main.css": "/static/css/main.0c5dc439.css",
+    "main.js": "/static/js/main.89ecbf62.js",
     "static/media/afnan.jpg": "/static/media/afnan.1410d215239e915818bf.jpg",
     "index.html": "/index.html",
-    "main.85da2e7d.css.map": "/static/css/main.85da2e7d.css.map",
-    "main.434c8faf.js.map": "/static/js/main.434c8faf.js.map"
+    "main.0c5dc439.css.map": "/static/css/main.0c5dc439.css.map",
+    "main.89ecbf62.js.map": "/static/js/main.89ecbf62.js.map"
   },
   "entrypoints": [
-    "static/css/main.85da2e7d.css",
-    "static/js/main.434c8faf.js"
+    "static/css/main.0c5dc439.css",
+    "static/js/main.89ecbf62.js"
   ]
 }
