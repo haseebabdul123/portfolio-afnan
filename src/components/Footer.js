@@ -12,7 +12,7 @@ const Footer = () => {
             </a>
             </div>
             <div className="linkin">
-            <a href="" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/Afnan-Fahim" target="_blank" rel="noopener noreferrer" className="social-icon">
               <img src={github} alt="Facebook" />
             </a>
             </div>

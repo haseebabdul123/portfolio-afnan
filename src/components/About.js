@@ -16,7 +16,7 @@ const About = () => {
             <img src={img} alt="Afnan Fahim" />
             <div className="details">
             <h1 className="name">I am  <span>Afnan Fahim</span></h1>
-            <p className="liP">Softwear Engineer | WordPress Guru | Voice-over Artist | Freelancer</p>
+            <p className="liP">Software Engineer | WordPress Guru | Voice-over Artist | Freelancer</p>
            <div className="btns"> <button>
              <a href="https://www.facebook.com/afnan.fahim.1428" target="_blank" rel="noopener noreferrer" className="social-icon">
                            <img src={facebook} alt="Facebook" />
