@@ -6,7 +6,7 @@ const BackgroundStars = () => {
         const starContainer = document.querySelector(".stars");
 
         // ⭐ Adjusted: Fewer Stars (Reduced from 100 to 40)
-        for (let i = 0; i < 200; i++) {  
+        for (let i = 0; i < 100; i++) {  
             let star = document.createElement("div");
             star.classList.add("star");
             star.style.top = `${Math.random() * 100}vh`;
